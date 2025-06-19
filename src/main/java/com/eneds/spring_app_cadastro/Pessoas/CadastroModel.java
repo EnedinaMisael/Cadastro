@@ -2,6 +2,8 @@ package com.eneds.spring_app_cadastro;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 
 // entity transforma uma classe em uma entidade do db
 @Entity
@@ -12,10 +14,11 @@ public class CadastroModel {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)// para gerar id sequencial
-    Long id;
-    String nome;
-    String email;
-    int idade;
+    private Long id;
+    private String nome;
+    private String email;
+    private int idade;
+    private List<TarefasModel> tarefas;
 
 
     // abaixo os contrutores
