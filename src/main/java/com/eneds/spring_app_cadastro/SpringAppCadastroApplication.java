@@ -1,0 +1,13 @@
+package com.eneds.spring_app_cadastro;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringAppCadastroApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringAppCadastroApplication.class, args);
+	}
+
+}
